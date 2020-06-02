@@ -8,10 +8,10 @@ bot
   qrcodeTerminal.generate(qrcode)
 })
 .on('login',function(user){
-  console.log('${user.name()} login')
+  console.log('${user} login')
 })
 .on('logout',function(user){
-  console.log('${user.name()} logout')
+  console.log('${user} logout')
 })
 .on('message',function(message){
   if(message.self()){
